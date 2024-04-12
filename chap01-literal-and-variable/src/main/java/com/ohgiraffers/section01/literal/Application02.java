@@ -21,6 +21,8 @@ public class Application02 {
 
         System.out.println('a'/'b');
         System.out.println('a'+1);
+
+
     }
 
 }
