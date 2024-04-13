@@ -48,19 +48,20 @@ public class Application {
                         String memo = sc.nextLine();
                         // 아무것도 입력안했을때 넘기려면 뭘 넣어야 될까
 
-                        System.out.print("그룹을 지정하세요 ( 1.미지정 / 2.가족 / 3.회사 / 4.친구 ) : ");
-                        int group = Integer.parseInt(sc.nextLine());
+//                        System.out.print("그룹을 지정하세요 ( 1.미지정 / 2.가족 / 3.회사 / 4.친구 ) : ");
+//                        int group = Integer.parseInt(sc.nextLine());
 
-                        members.add(new PhoneDTO(name, phone, email, memo, group));
+                        members.add(new PhoneDTO(name, phone, email, memo));
                         num++; //회원추가가 완료되면 위에서 만들었던 members 리스트에 넣고 카운팅함
 
                         System.out.println(members); // 입력받은 정보를 확인시켜주기 위해 출력해줌
                         System.out.println("전화번호부에 등록되었습니다.");
                         System.out.print("계속 등록하시려면 1번을 누르세요. ");
                         keepgoing = sc.nextInt(); // 1번이면 위로 올라가서 while문 다시 실행함
+                        sc.nextLine();
 
                     } // 컨트롤러 넘겨
-                    result = (members) // 받은 고객DB를 주소록에 전달해줘 (그 안에서 꺼내쓰게)
+                    result = members.toString(); // 받은 고객DB를 주소록에 전달해줘 (그 안에서 꺼내쓰게)
                     break;
  
                 case 2 :

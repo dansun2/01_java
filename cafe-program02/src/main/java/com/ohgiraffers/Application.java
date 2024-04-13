@@ -9,8 +9,15 @@ public class Application {
 
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
+
+        // OrderController 객체를 생성하여 등록, 삭제, 수정, 조회 등의 기능을 호출하고 관리함
+        // 객체를 생성하지 않고는 해당 클래스의 메서드를 호출하거나 속성에 접근할 수 없다.
         OrderController orderController = new OrderController();
+
+        // 주문 프로그램 계속 진행 여부를 나타내는 변수 초기화
         boolean order = true;
+
+        // 처리 결과를 저장할 문자열 변수 초기화 (지역변수를 반드시 초기화해서 사용해야함. 트래쉬값 방지..?)
         String result = "";
         int index;
         while(order){

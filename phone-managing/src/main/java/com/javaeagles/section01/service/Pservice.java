@@ -1,8 +1,12 @@
 package com.javaeagles.section01.service;
 
+import com.javaeagles.section01.dto.PhoneDTO;
+
+import java.util.ArrayList;
+
 public class Pservice {
 
-    public ArrayList member() {
+    public ArrayList<PhoneDTO> members = new ArrayList<>(); {
 
     }
 
