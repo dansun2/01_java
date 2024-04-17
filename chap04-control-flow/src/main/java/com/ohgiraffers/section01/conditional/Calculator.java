@@ -11,37 +11,69 @@ import java.util.Scanner;
 // 연산기호를 스캔받는다
 // 계산한다. (if)
 
+/*
+* 1. Calculator 라는 메소드를 만든다. ->이게 무슨말이지?
+* 2. 첫번째 수와 두번째 수를 입력받는다.
+* 3. 연산기호를 입력받는다.
+* 4. 연산기호를 확인한다.
+* 5. 연산을 진행한다.
+* 6. 반환한다.=출력한다.
+* public double calculator(){}
+* Scanner sc=new Scanner(System.in);
+* int first=sc.nextInt();
+* int second=sc.nextInt();
+* char operator=sc.nextLine().charAt(0);
+ */
+
 public class Calculator {
     public static void main(String[] args) {
-        Scanner sc2 = new Scanner(System.in);
-        Scanner sc3 = new Scanner(System.in);
-        Scanner sc4 = new Scanner(System.in);
-        double result;
-
-        System.out.print("수 1을 입력해주세요 : ");
-        double num2 = sc2.nextDouble();
-
-        System.out.print("수 2를 입력해주세요 : ");
-        double num3 = sc3.nextDouble();
-
-        System.out.print("연산을 원하는 기호를 입력해주세요(+,-,*,/,%) : " );
-        char rlgh = sc4.next().charAt(0);
-
-        if(rlgh == '+'){
-            result = num2 + num3;
-            System.out.println(result);
-        }else if(rlgh == '-'){
-            result = num2 - num3;
-            System.out.println(result);
-        }else if(rlgh == '*'){
-            result = num2 * num3;
-            System.out.println(result);
-        }else if(rlgh == '/'){
-            result = num2 / num3;
-            System.out.println(result);
-        }else{
-            result = num2 % num3;
-            System.out.println(result);
-        }
+        Calculator calc = new Calculator(); // 메모리에 올려줘
+        double cc = calc.calculator(); // calculator라는 메소드의 결과값을 double로 반환할거고 이름은 cc야
+        
+        System.out.println(cc); //cc를 출력해
     }
+        public double calculator () {
+            Scanner sc2 = new Scanner(System.in);
+
+            double result; // 이거 왜 이렇게 쓰더라?
+
+            System.out.print("수 1을 입력해주세요 : ");
+            double num2 = sc2.nextDouble();
+
+            System.out.print("수 2를 입력해주세요 : ");
+            double num3 = sc2.nextDouble();
+
+            System.out.print("연산을 원하는 기호를 입력해주세요(+,-,*,/,%) : ");
+            char rlgh = sc2.next().charAt(0);
+
+            if (rlgh == '+') {
+                result = num2 + num3;
+                return result;
+
+            } else if (rlgh == '-') {
+                result = num2 - num3;
+                return result;
+
+            } else if (rlgh == '*') {
+                result = num2 * num3;
+                return result;
+
+            } else if (rlgh == '/') {
+                result = num2 / num3;
+                return result;
+
+            } else if (rlgh == '%') {
+                result = num2 % num3;
+                return result;
+
+            }
+
+            // return ""+result; 혹은 return String.valueOf(result);
+            return 0.0;
+
+        }
+
+    // 한번에 연산식 입력받기
+
+
 }
