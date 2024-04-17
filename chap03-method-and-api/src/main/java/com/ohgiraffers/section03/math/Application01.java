@@ -11,6 +11,7 @@ public class Application01 {
         * 더 쉽게 누군가 작성해놓은 소스코드를 가져다 사용하는 것이다.
          */
 
-        System.out.println(java.lang.Math.abs(-7.0)); //오버로딩이라는거 찾아보기
+        System.out.println(java.lang.Math.abs(-7.0)); //오버로딩이라는거 찾아보기 //abs는 메소드(가로를 열고 닫았네)
+        // 같은 패키지안에는 같은 클래스가 존재할 수 없고 다른패키지의 같은 클래스는 .<-이런식으로 위치를 표시해줘야함
     }
 }
