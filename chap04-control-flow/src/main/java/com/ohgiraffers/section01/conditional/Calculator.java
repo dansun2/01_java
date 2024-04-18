@@ -26,8 +26,8 @@ import java.util.Scanner;
  */
 
 public class Calculator {
-    public static void main(String[] args) {
-        Calculator calc = new Calculator(); // 메모리에 올려줘
+    public static void main(String[] args) { //메인이라는 메소드가 클래스 안에 있는거
+        Calculator calc = new Calculator(); // 메모리에 올려줘 주민번호로 =출생신고
         double cc = calc.calculator(); // calculator라는 메소드의 결과값을 double로 반환할거고 이름은 cc야
         
         System.out.println(cc); //cc를 출력해
@@ -35,7 +35,7 @@ public class Calculator {
         public double calculator () {
             Scanner sc2 = new Scanner(System.in);
 
-            double result; // 이거 왜 이렇게 쓰더라?
+            double result = 0; // 이거 왜 이렇게 쓰더라?
 
             System.out.print("수 1을 입력해주세요 : ");
             double num2 = sc2.nextDouble();
@@ -48,28 +48,28 @@ public class Calculator {
 
             if (rlgh == '+') {
                 result = num2 + num3;
-                return result;
+
 
             } else if (rlgh == '-') {
                 result = num2 - num3;
-                return result;
+
 
             } else if (rlgh == '*') {
                 result = num2 * num3;
-                return result;
+
 
             } else if (rlgh == '/') {
                 result = num2 / num3;
-                return result;
+
 
             } else if (rlgh == '%') {
                 result = num2 % num3;
-                return result;
+
 
             }
 
             // return ""+result; 혹은 return String.valueOf(result);
-            return 0.0;
+            return result;
 
         }
 
