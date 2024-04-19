@@ -5,6 +5,10 @@ public class Application01 {
         A_for afor = new A_for();
 //        afor.testSimpleForStatement();
 //        afor.gugudan();
-        afor.student();
+//        afor.student();
+//        B_while bwhile = new B_while();
+//        bwhile.testSimpleWhileStatement(); // 실행시켜주는 부분
+        C_dowhile cDowhile = new C_dowhile();
+        cDowhile.testSimpledoWhileStatement();
     }
 }
