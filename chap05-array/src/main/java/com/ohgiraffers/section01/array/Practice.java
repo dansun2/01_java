@@ -20,17 +20,19 @@ public class Practice {
         // 1. 스캔준비
         // 2. 메뉴와 수량 변수 설정(?)
         // 3. 메뉴를 리스트로 명명하고 스캔받음
-        // 4. if 사용하여 . 이 들어오면 주문 끝
+        // 4. while 사용하여 . 이 들어올때까지 주문을 받음
         // 5. 나머지 다른 메뉴를 받았을때 가격을 합계에 더함
         // 6. 출력하기
+
+        // ***** 오류: 주문을 받으면 수량받을때 무한반복됨..수량을 받고 다시 돌아가서 다른메뉴를 받아야 하는데..
 
         Scanner sc = new Scanner(System.in);
 
         String[] list = {"아메리카노","카페라떼","밀크티","바닐라라떼","밀크쉐이크"};
 
         int x = 0;
-
-        System.out.print("주문을 원하시는 메뉴를 적으세요 : ");
+        String b = "주문을 원하시는 메뉴를 적으세요 : ";
+        System.out.print(b);
         String menu = sc.nextLine();
 
         while (!menu.equals(".")) {
@@ -38,6 +40,7 @@ public class Practice {
                 System.out.print("수량을 입력하세요 : ");
                 int a = sc.nextInt();
                 x = 3000 * a;
+
             } else if (menu.equals(list[1])) {
                 System.out.print("수량을 입력하세요 : ");
                 int a = sc.nextInt();
