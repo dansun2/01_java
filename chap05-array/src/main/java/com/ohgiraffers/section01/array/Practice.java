@@ -34,9 +34,7 @@ public class Practice {
         String menu = sc.nextLine();
 
         while (!menu.equals(".")) {
-            if (menu.equals(".")) {
-                System.out.println("주문이 없습니다. 다시 시도하세요.");
-            } else if (menu.equals(list[0])) {
+            if (menu.equals(list[0])) {
                 System.out.print("수량을 입력하세요 : ");
                 int a = sc.nextInt();
                 x = 3000 * a;
@@ -59,7 +57,7 @@ public class Practice {
             } else {
                 System.out.println("없는 메뉴입니다.");
             }
-        }
+        }System.out.println("주문이 없습니다. 처음부터 다시 시도하세요.");
         System.out.println("지불하실 금액은 " + x + "원 입니다.");
 
 
