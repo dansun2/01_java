@@ -39,24 +39,34 @@ public class Practice {
             if (menu.equals(list[0])) {
                 System.out.print("수량을 입력하세요 : ");
                 int a = sc.nextInt();
-                x = 3000 * a;
+                    while (a <1) {
+                        x = 3000 * a;
+                    }
 
             } else if (menu.equals(list[1])) {
                 System.out.print("수량을 입력하세요 : ");
                 int a = sc.nextInt();
-                x = 3500 * a;
+                    while (a <1) {
+                        x = 3500 * a;
+                    }
             } else if (menu.equals(list[2])) {
                 System.out.print("수량을 입력하세요 : ");
                 int a = sc.nextInt();
-                x = 5000 * a;
+                    while (a <1) {
+                        x = 5000 * a;
+                    }
             } else if (menu.equals(list[3])) {
                 System.out.print("수량을 입력하세요 : ");
                 int a = sc.nextInt();
-                x = 3500 * a;
+                    while (a <1) {
+                        x = 3500 * a;
+                    }
             } else if (menu.equals(list[4])) {
                 System.out.print("수량을 입력하세요 : ");
                 int a = sc.nextInt();
-                x = 4500 * a;
+                    while (a <1) {
+                        x = 4500 * a;
+                    }
             } else {
                 System.out.println("없는 메뉴입니다.");
             }
