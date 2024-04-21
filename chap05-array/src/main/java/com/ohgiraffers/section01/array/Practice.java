@@ -32,16 +32,17 @@ public class Practice {
 
         int x = 0;
         String b = "주문을 원하시는 메뉴를 적으세요 : ";
-        System.out.print(b);
-        String menu = sc.nextLine();
+        ///
+        String menu = ""; // int a=0; 초기화랑 똑같음
 
         while (!menu.equals(".")) {
+            System.out.print(b); //
+            menu = sc.nextLine(); //
             if (menu.equals(list[0])) {
                 System.out.print("수량을 입력하세요 : ");
                 int a = sc.nextInt();
-                    while (a <1) {
-                        x = 3000 * a;
-                    }
+                sc.nextLine(); // 위에서 정수를 받았기 때문에 ..? 서블릿 //사용자가 응답할 수 있도록 뭔가 만들어줌
+                x = 3000 * a;
 
             } else if (menu.equals(list[1])) {
                 System.out.print("수량을 입력하세요 : ");
@@ -72,12 +73,5 @@ public class Practice {
             }
         }System.out.println("주문이 없습니다. 처음부터 다시 시도하세요.");
         System.out.println("지불하실 금액은 " + x + "원 입니다.");
-
-
-
-
-
-
     }
-
 }
