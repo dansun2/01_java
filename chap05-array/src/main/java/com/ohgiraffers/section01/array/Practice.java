@@ -47,27 +47,27 @@ public class Practice {
             } else if (menu.equals(list[1])) {
                 System.out.print("수량을 입력하세요 : ");
                 int a = sc.nextInt();
-                    while (a <1) {
-                        x = 3500 * a;
-                    }
+                sc.nextLine();
+                x = 3500 * a;
+
             } else if (menu.equals(list[2])) {
                 System.out.print("수량을 입력하세요 : ");
                 int a = sc.nextInt();
-                    while (a <1) {
-                        x = 5000 * a;
-                    }
+                sc.nextLine();
+                x = 5000 * a;
+
             } else if (menu.equals(list[3])) {
                 System.out.print("수량을 입력하세요 : ");
                 int a = sc.nextInt();
-                    while (a <1) {
-                        x = 3500 * a;
-                    }
+                sc.nextLine();
+                x = 3500 * a;
+
             } else if (menu.equals(list[4])) {
                 System.out.print("수량을 입력하세요 : ");
                 int a = sc.nextInt();
-                    while (a <1) {
-                        x = 4500 * a;
-                    }
+                sc.nextLine();
+                x = 4500 * a;
+
             } else {
                 System.out.println("없는 메뉴입니다.");
             }
