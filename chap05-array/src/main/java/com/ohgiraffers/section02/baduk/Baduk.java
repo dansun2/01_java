@@ -11,8 +11,8 @@ public class Baduk {
     public void baduk(){
         String[][] board = new String[19][19]; // 바둑을 표현할 공간을 만듦
 
-        for (int i = 0; i < board.length; i++){ //board는 [][]두갠데 앞줄갯순지 뒷줄갯순지 어떻게 알고?
-            for (int j = 0; j < board[0].length; j++){ //왜 board[0]이 들어가지?
+        for (int i = 0; i < board.length; i++){ //board는 [][]두갠데 만약에 앞뒤 숫자 다르면 앞줄갯순지 뒷줄갯순지 어떻게 알고?
+            for (int j = 0; j < board[i].length; j++){ //왜 board[0]이 들어가지? board는 안되나?
                 board[i][j] = "[]";
                 System.out.print(board[i][j]);
             }
@@ -20,6 +20,7 @@ public class Baduk {
         }
 
         String play = "";
+        String quit = "";
         Scanner scanner = new Scanner(System.in);
         int[] index = new int[2]; // 좌표찍기위해
         int turn = 0; // 트루/펄스 분리형으로 해줘도 됨
@@ -50,7 +51,15 @@ public class Baduk {
                 }
                 System.out.println();
             }
-            turn ++;
+            System.out.println("계속하시겠습니까? ( 네 / 아니오 )");
+            quit = scanner.next();
+            if (quit.equals("네")){
+                continue;
+            }else{
+                turn ++;
+                return;
+            }
+
         }
     }
 }
