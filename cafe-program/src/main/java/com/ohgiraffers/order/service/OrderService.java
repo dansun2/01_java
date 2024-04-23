@@ -17,6 +17,12 @@ public class OrderService {
         if(orderDTO.getPrice() <= 0){
             return "땅파서 장사하냐?";
         }
-        orderRepository.order(orderDTO);
+        String result = orderRepository.order(orderDTO);
+        return result;
+    }
+
+    public String orderRead(OrderDTO orderDTO){
+        String result = orderRepository.orderRead(orderDTO);
+        return result;
     }
 }
