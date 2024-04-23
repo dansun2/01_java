@@ -16,7 +16,7 @@ public class Application01 {
         MemberDTO kim = new MemberDTO();
         kim.setAge(19);
         kim.setAddress("고잔동");
-        kim.setGender('남');0
+        kim.setGender('남');
         kim.setPhone("010-2323-2323");
         kim.setName("김재석");
 
