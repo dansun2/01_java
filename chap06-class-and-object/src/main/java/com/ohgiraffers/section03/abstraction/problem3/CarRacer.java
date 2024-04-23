@@ -8,7 +8,8 @@ public class CarRacer {
         return car;
     }
 
-    public void setCar(Car car) {
+    public void setCar(Car car) { //카레이서한테 차를 주는 부분. 계층간에 데이터를 주고받을때 조금 더 편하게 주고 받을 수 있는 방법이 있음(DTO 클래스)
+        // 보통 변경되는 객체에 쓴다. 다른사람도 접근할 수 있게
         this.car = car;
     }
 
