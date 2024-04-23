@@ -62,9 +62,9 @@ public class Application01 {
                 String[] bookAuthor = {"김종민","박용우","백상현"};
 
                 for (int i = 0; i < list.length; i++) {
-                    books[i] = new Book();
-                    books[i].bookName = list[i];
-                    books[i].author = bookAuthor[i];
+                    books[i] = new Book(); // 이게 클래스 쓴거
+                    books[i].bookName = list[i]; // 이게 클래스 쓴거
+                    books[i].author = bookAuthor[i]; // 이게 클래스 쓴거
 
 
                     System.out.print("도서번호 "+bookNumber[i]);

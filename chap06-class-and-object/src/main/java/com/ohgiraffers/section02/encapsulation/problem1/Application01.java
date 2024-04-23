@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Application01 {
 
     public static void main(String[] args){
-        Monster drunkTiger = new Monster();
+        Monster drunkTiger = new Monster(); // drunkTiger 는 인스턴스
         drunkTiger.name = "드렁큰타이거";
 //        drunkTiger.hp = -100;
 

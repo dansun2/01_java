@@ -2,7 +2,7 @@ package com.ohgiraffers.section02.encapsulation.problem1;
 
 public class Monster {
     String name;
-    private int hp;
+    private int hp; // Application01 클래스에서 체력에 직접 접근할 수 있기 때문에 private한 클래스를 만들어줌(캡슐화)
 
     // 몬스터의 hp가 0보다 큰 값만 입력될 수 있도록 하여 버그를 막고자 함
     public void setHp(int hp){ // setHp 시작 //여기서 int hp는 무조건 매개변수값을 hp 라는 정수로 받고자 함
