@@ -7,9 +7,12 @@ public class Application01 {
         Car car1 = new Car();
         CarRacer carRacer = new CarRacer(); // 운전자 클래스를 만들어줌
 
-        carRacer.startUp(car); //매개변수로 자동차가 필요함
+        carRacer.startUp(car); //매개변수로 car를 넣어줌
         carRacer.go(car1);
         carRacer.stop(car1);
         carRacer.turnOff(car1);
+
+        car.go(); // 자동차는 카레이서 없이도 출발 가능
+
     }
 }
