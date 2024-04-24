@@ -65,7 +65,7 @@ public class Application {
 
 
                     case 5: // 주문 전체조회
-
+                        orderRepository.orderRead;
                         result = orderController.orderRead(orderDTO);
 
 
