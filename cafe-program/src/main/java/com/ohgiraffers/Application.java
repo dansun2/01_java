@@ -47,9 +47,8 @@ public class Application {
                         System.out.print("가격을 입력해주세요 : ");
                         int price = sc.nextInt();
 
-                        OrderDTO orderDTO = new OrderDTO(menuName, quantity, price);
-                        orderDTO.setQuantity(quantity, price); // 수량 * 가격을 계산한걸 setQuantity에 넣어줌
-                        result = orderController.order(orderDTO); // http에 담겨서 전달되는것 그 안에서 꺼내서 쓰면 된다
+                        OrderDTO orderDTO = new OrderDTO(menuName, quantity, price); // 주문한 빌지
+                        result = orderController.order(orderDTO); // http에 담겨서 전달되는것 그 안에서 꺼내서 쓰면 된다(주방장)
 
 
                         break;

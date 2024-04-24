@@ -9,7 +9,7 @@ public class OrderDTO {
     public OrderDTO(String menuName, int quantity, int price){
         this.menuName = menuName;
         this.quantity = quantity;
-        this.price = price;
+        this.price = price*quantity;
     }
 
     public String getMenuName() {
@@ -30,7 +30,6 @@ public class OrderDTO {
 
     public void setQuantity(int quantity, int price) { //메뉴 dto따로 안해서 여기다 줌
         this.quantity = quantity;
-        this.price = quantity * price;
 
     }
 

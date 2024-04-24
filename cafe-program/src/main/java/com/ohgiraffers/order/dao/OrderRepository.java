@@ -9,9 +9,10 @@ public class OrderRepository {
     private final ArrayList orders = new ArrayList();
 
     public String order(OrderDTO orderDTO){
-        int oldNum = orders.size(); // 잘 이해안감
+        int oldNum = orders.size(); // 메뉴이름,
         orders.add(orderDTO);
-        if(oldNum > orders.size()){
+
+        if(oldNum >= orders.size()){
             return "등록실패";
         }
         System.out.println(orders);
