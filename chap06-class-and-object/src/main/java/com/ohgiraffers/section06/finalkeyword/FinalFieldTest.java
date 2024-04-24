@@ -39,7 +39,12 @@ public class FinalFieldTest {
     }
 
     private final String STATIC_STRING; // 클래스의 일반 상수는 생성자를 통하여 초기값을 전달하는것이 가능하다.
-    
+
+    // 상수 필드는 꼭 초기화를 해야 하는 규칙을 가지고 있다.
+    // 그러나 아래와 같이 생성을 하게 되면 초기값이 전달이 안 되는 것이고
+    // 결국 상수필드를 선언한 의미는 없어지는 것
+    public FinalFieldTest(){}
+
     public FinalFieldTest(String STATIC_STRING){
         this.STATIC_STRING = STATIC_STRING;
     }

@@ -6,10 +6,10 @@ public class OrderDTO {
     private int price;
     private int quantity;
 
-    public OrderDTO(String menuName, int price, int quantity){
+    public OrderDTO(String menuName, int quantity, int price){
         this.menuName = menuName;
-        this.price = price;
         this.quantity = quantity;
+        this.price = price;
     }
 
     public String getMenuName() {

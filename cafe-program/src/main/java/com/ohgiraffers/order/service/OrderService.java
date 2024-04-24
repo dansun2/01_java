@@ -5,7 +5,7 @@ import com.ohgiraffers.order.dto.OrderDTO;
 
 public class OrderService {
 
-    private OrderRepository orderRepository = new OrderRepository();
+    private final OrderRepository orderRepository = new OrderRepository();
     // 서비스 계층
     // 비즈니스 로직 수행 및 데이터 베이스에 대한 리소스를 관리한다.
 
