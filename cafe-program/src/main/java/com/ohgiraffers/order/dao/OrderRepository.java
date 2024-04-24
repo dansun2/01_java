@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class OrderRepository {
 
-    ArrayList orders = new ArrayList();
+    private final ArrayList orders = new ArrayList();
 
     public String order(OrderDTO orderDTO){
         int oldNum = orders.size(); // 잘 이해안감
@@ -15,6 +15,7 @@ public class OrderRepository {
             return "등록실패";
         }
         System.out.println(orders);
+
         return "등록성공";
 
     }
@@ -23,7 +24,6 @@ public class OrderRepository {
         System.out.println('\n' + "현재 주문하신 메뉴는 " + '\n' + orderDTO.getMenuName() + " "
                 + orderDTO.getQuantity() + "잔" + '\n'
                 + "총 지불하실 금액은 " + orderDTO.getPrice() + "원 입니다.");
-
 
         return orderDTO.getMenuName();
     }

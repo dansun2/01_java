@@ -55,7 +55,14 @@ public class UserDTO {
         this.enrollDate = enrollDate;
     }
 
-    @Override // 어노테이션:골뱅이로 시작됨. 특별한 기능을 가진것들(자바에서 미리 약속이 되어 있음)
 
-
+    @Override // 어노테이션:골뱅이로 시작됨. 특별한 기능을 가진것들(자바에서 미리 약속이 되어 있음) // object가 갖고 있는 것을 재정의
+    public String toString() {
+        return "UserDTO{" +
+                "id='" + id + '\'' +
+                ", pwd='" + pwd + '\'' +
+                ", name='" + name + '\'' +
+                ", enrollDate=" + enrollDate +
+                '}';
+    }
 }

@@ -6,6 +6,12 @@ public class OrderDTO {
     private int price;
     private int quantity;
 
+    public OrderDTO(String menuName, int price, int quantity){
+        this.menuName = menuName;
+        this.price = price;
+        this.quantity = quantity;
+    }
+
     public String getMenuName() {
         return menuName;
     }

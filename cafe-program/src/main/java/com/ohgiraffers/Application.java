@@ -13,11 +13,12 @@ public class Application {
         Scanner sc = new Scanner(System.in);
         OrderController orderController = new OrderController();
 
+
         boolean order = true;
         String order2 = "";
         String result = "";
         String result2 = "";
-
+        int count = 0;
 
             while (order) {
 
@@ -30,21 +31,26 @@ public class Application {
 
                 int input = sc.nextInt();
                 sc.nextLine();
-                OrderDTO orderDTO = new OrderDTO(); // 이거 왜 들어가지?
+
                 OrderRepository orderRepository = new OrderRepository();
 
                 switch (input) {
 
                     case 1: // 주문 등록
+
                         System.out.print("주문할 메뉴 이름을 등록해주세요 : ");
-                        orderDTO.setMenuName(sc.nextLine());
+                        String menuName = sc.nextLine();
+
                         System.out.print("수량을 입력해주세요 : ");
                         int quantity = sc.nextInt();
+
                         System.out.print("가격을 입력해주세요 : ");
                         int price = sc.nextInt();
 
-                        orderDTO.setQuantity(quantity, price);
+                        OrderDTO orderDTO = new OrderDTO(menuName, quantity, price);
+                        orderDTO.setQuantity(quantity, price); // 수량 * 가격을 계산한걸 setQuantity에 넣어줌
                         result = orderController.order(orderDTO); // http에 담겨서 전달되는것 그 안에서 꺼내서 쓰면 된다
+
 
                         break;
 
@@ -65,9 +71,8 @@ public class Application {
 
 
                     case 5: // 주문 전체조회
-                        orderRepository.orderRead;
-                        result = orderController.orderRead(orderDTO);
-
+                        for (int i = 0; i<count; i++)
+                        System.out.println(orderController.result2);
 
                         break;
 
