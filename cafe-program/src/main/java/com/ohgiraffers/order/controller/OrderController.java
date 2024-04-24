@@ -23,9 +23,9 @@ public class OrderController {
     }
 
 
-    public String orderRead(OrderDTO orderDTO) {
-        String result2 = orderService.orderRead(orderDTO);
-        return "전체조회";
+    public String orderRead() {
+        orderService.orderRead();
+        return orderService.orderRead();
     }
 
     public String orderDelete() {

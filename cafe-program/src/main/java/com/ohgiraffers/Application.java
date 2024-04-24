@@ -15,10 +15,10 @@ public class Application {
 
 
         boolean order = true;
-        String order2 = "";
+
         String result = "";
-        String result2 = "";
-        int count = 0;
+
+
 
             while (order) {
 
@@ -32,7 +32,7 @@ public class Application {
                 int input = sc.nextInt();
                 sc.nextLine();
 
-                OrderRepository orderRepository = new OrderRepository();
+
 
                 switch (input) {
 
@@ -70,9 +70,8 @@ public class Application {
 
 
                     case 5: // 주문 전체조회
-                        for (int i = 0; i<count; i++)
-                        System.out.println(orderController.result2);
-
+                        System.out.println("주문 전체 조회");
+                        result = orderController.orderRead();
                         break;
 
 

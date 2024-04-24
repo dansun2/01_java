@@ -1,6 +1,7 @@
 package com.ohgiraffers.order.dao;
 
 import com.ohgiraffers.order.dto.OrderDTO;
+import com.ohgiraffers.order.service.OrderService;
 
 import java.util.ArrayList;
 
@@ -15,18 +16,15 @@ public class OrderRepository {
         if(oldNum >= orders.size()){
             return "등록실패";
         }
+
         System.out.println(orders);
 
         return "등록성공";
 
     }
 
-    public String orderRead(OrderDTO orderDTO){
-        System.out.println('\n' + "현재 주문하신 메뉴는 " + '\n' + orderDTO.getMenuName() + " "
-                + orderDTO.getQuantity() + "잔" + '\n'
-                + "총 지불하실 금액은 " + orderDTO.getPrice() + "원 입니다.");
-
-        return orderDTO.getMenuName();
+    public String orderRead(){
+        return "" + this.orders;
     }
 
 

@@ -13,7 +13,7 @@ public class Member {
 
     @Override
     public String toString() {
-        return "Member [id=" + id + ", pwd=" + pwd + ", name=" + name + '\n' + "hobby=" + Arrays.toString(hobby);
+        return "Member id=" + id + ", pwd=" + pwd + ", name=" + name + '\n' + "hobby=" + Arrays.toString(hobby);
     }
 
 }
