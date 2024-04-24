@@ -24,10 +24,11 @@ public class OrderRepository {
     }
 
     public String orderRead(){
-        return "" + this.orders;
+        StringBuilder ordersStringBuilder = new StringBuilder("주문 목록 : \n");
+        // orders를 순회하면서 각 요소를 OrderDTO로 캐스팅하여 문자열로 변환 후 문자열에 추가
+        for (OrderDTO orderDTO : orders) {
+            ordersStringBuilder.append(orderDTO.toString()).append("\n");
+        }
+        return ordersStringBuilder.toString();
     }
-
-
-
-
 }

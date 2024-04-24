@@ -18,7 +18,7 @@ public class OrderService {
         if(orderDTO.getPrice() <= 0){
             return "땅파서 장사하냐?";
         }
-        //String result = orderRepository.order(orderDTO);
+        // String result = orderRepository.order(orderDTO);
         return "주문 성공";
     }
 
