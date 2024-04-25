@@ -11,5 +11,18 @@ public class MemberService {
         members[4] = new Member(5,"user05","pass05","윤봉길",22,'남');
 
         MemberRegister memberRegister = new MemberRegister();
+        memberRegister.regist(members);
+    }
+
+    public void showAllMembers() {
+        MemberFinder finder = new MemberFinder();
+        System.out.println("--------가입된 회원 목록-------");
+        for (Member member : finder.findAllMembers()) {
+            if(member != null){
+                System.out.println(member);
+            }
+        }
+        System.out.println("----------------");
+
     }
 }

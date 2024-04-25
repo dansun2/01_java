@@ -9,8 +9,8 @@ public class MemberRegister {
             System.out.println(members[i].getName() + "님을 회원 등록에 성공하였습니다.");
         }
 
-        if(){
-
+        if(MemberRepository.store(members)){
+            System.out.println("총 " + members.length + "명의 회원 등록에 성공했습니다.");
         }
     }
 
