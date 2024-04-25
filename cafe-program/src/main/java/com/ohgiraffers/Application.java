@@ -39,7 +39,7 @@ public class Application {
                     case 1: // 주문 등록
                         System.out.print("몇개의 음료를 주문하시겠습니까? : ");
                         int cnt = sc.nextInt();
-                        sc.nextLine(); // 뭐를 날리는거지?
+                        sc.nextLine(); // 뭐를 날리는거지? 왜 날려?
                         OrderDTO[] orders = new OrderDTO[cnt];
 
                         for (int i = 0; i < orders.length; i++) {
