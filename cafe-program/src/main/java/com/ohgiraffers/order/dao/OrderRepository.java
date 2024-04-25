@@ -7,6 +7,20 @@ import java.util.ArrayList;
 
 public class OrderRepository {
 
+    public final static OrderDTO[] aaa;
+    private static int count;
+
+    static{
+        aaa = new OrderDTO[10];
+    }
+
+    public static boolean store(OrderDTO[] dto) {
+        for (int i = 0; i<dto.length; i++){
+            aaa[count++] = dto[i];
+        }
+        return true;
+    }
+
     private final ArrayList orders = new ArrayList();
 
     public String order(OrderDTO orderDTO){
@@ -24,11 +38,7 @@ public class OrderRepository {
     }
 
     public String orderRead(){
-        StringBuilder ordersStringBuilder = new StringBuilder("주문 목록 : \n");
-        // orders를 순회하면서 각 요소를 OrderDTO로 캐스팅하여 문자열로 변환 후 문자열에 추가
-        for (OrderDTO orderDTO : orders) {
-            ordersStringBuilder.append(orderDTO.toString()).append("\n");
-        }
-        return ordersStringBuilder.toString();
+
+        return ""+this.orders;
     }
 }
