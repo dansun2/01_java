@@ -25,4 +25,8 @@ public class MemberService {
         System.out.println("----------------");
 
     }
+
+    public void showMemberByName(String name){
+
+    }
 }

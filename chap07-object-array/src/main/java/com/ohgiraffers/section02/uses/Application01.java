@@ -14,6 +14,7 @@ public class Application01 {
         // 사용자 정보를 입력받기 위함
         Scanner sc = new Scanner(System.in);
 
+        // MemberService 클래스를 사용하기 위해 메모리에 올려줌
         MemberService memberService = new MemberService();
 
         while(true){
@@ -23,7 +24,7 @@ public class Application01 {
             System.out.println("3. 프로그램 종료");
             System.out.print("메뉴 선택 : ");
 
-            int no = sc.nextInt();
+            int no = sc.nextInt(); // 목차중에 어떤것을 실행할지 int로 받음
             switch(no){
                 case 1 : memberService.singUpMembers(); break;
                 case 2 : memberService.showAllMembers(); break;
@@ -31,7 +32,7 @@ public class Application01 {
                 default :
                     System.out.println("잘못된 번호를 입력하셨습니다.");
                     break;
-            }
+            } return;
         }
 
     }
