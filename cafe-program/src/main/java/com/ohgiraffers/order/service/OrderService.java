@@ -22,7 +22,7 @@ public class OrderService {
             }
         }
 
-        String result = orderRepository.order(orders);
+
         return "주문 성공";
     }
 

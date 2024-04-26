@@ -56,7 +56,7 @@ public class Application {
                         }
 
                         result = orderController.order(orders); // http에 담겨서 전달되는것 그 안에서 꺼내서 쓰면 된다(주방장)
-
+                        System.out.println("주문등록완료됐는지test");
 
                         break;
 
