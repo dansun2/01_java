@@ -49,5 +49,30 @@ public class Application01 {
         *   동일한 역할을 가지는 모든 객체는 동일한 메세지를 수신하기는 하지만,
         *   객체별로 그 메세지에 응답하는 방식은 서로 다를 수 있다. (다형성)
          */
+
+        Car car = new Car();
+        car.soundHorn();
+        car.run();
+        car.soundHorn();
+        car.stop();
+        car.soundHorn();
+
+
+        System.out.println("===================");
+        FireCar fireCar = new FireCar();
+        fireCar.soundHorn();
+        fireCar.run();
+        fireCar.soundHorn();
+        fireCar.stop();
+        fireCar.soundHorn();
+        fireCar.sprayWater();
+
+        System.out.println("===================");
+        RacingCar racingCar = new RacingCar();
+        racingCar.soundHorn();
+        racingCar.run();
+        racingCar.stop();
+        racingCar.soundHorn();
+
     }
 }
