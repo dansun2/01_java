@@ -30,6 +30,17 @@ public class SubClass extends SuperClass {
 //        return "";
 //    }
 
+//    @Override 부모보다 더 넓은 범위의 예외를 처리할 수 없음
+//    @Override
+//    public void exceptionMethod() throws Exception {
+//        super.exceptionMethod();
+//    }
+
+
+    @Override // runtimeException의 자식 클래스로 예외의 범위가 더욱 좁아서 가능
+    public void exceptionMethod() throws NullPointerException {
+        super.exceptionMethod();
+    }
 
     @Override
     protected void protectedMethod() {

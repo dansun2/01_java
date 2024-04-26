@@ -20,7 +20,7 @@ public class SuperClass {
     private void privateMethod(){}
     private final void finalMethod(){}
     protected void protectedMethod(){}
-    public void excetionMethod() throws RuntimeException{}
+    public void exceptionMethod() throws RuntimeException{}
 
 
 }
