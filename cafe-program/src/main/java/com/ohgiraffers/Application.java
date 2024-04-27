@@ -62,6 +62,13 @@ public class Application {
 
 
                     case 2: // 주문 삭제
+                        System.out.print("주문 내역을 삭제하시겠습니까? : ");
+                        boolean delete;
+                        if(delete){
+
+                        }else{
+                            System.out.println("이전 메뉴로 돌아갑니다.");
+                        }
                         orderController.orderDelete();
                         break;
 
