@@ -14,7 +14,7 @@ public class GenericTest<T> {
         return value;
     }
 
-    public void setValue(T value) { //타입이 결정되지 않아서 T라는 와이드타입
+    public void setValue(T value) { //타입이 결정되지 않아서 T라는 와일드카드
         this.value = value;
     }
 
