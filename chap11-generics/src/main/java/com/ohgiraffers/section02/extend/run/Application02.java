@@ -42,5 +42,6 @@ public class Application02 {
 //        아래는 Rabbit Farm의 조건은 만족하지만 superType의 조건은 만족하지 않는다.
 //        superType의 매개변수 조건은 bunny의 조상만 허용하기 때문이다.
 //        wildCardFarm.superType(new RabbitFarm<DrunkenBunny>(new DrunkenBunny()));
+//        wildCardFarm.superType((new RabbitFarm<Mammal>(new Mammal())));
     }
 }

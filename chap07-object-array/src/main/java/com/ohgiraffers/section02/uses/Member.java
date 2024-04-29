@@ -2,7 +2,6 @@ package com.ohgiraffers.section02.uses;
 
 public class Member { // 사용자의 정보를 입력받기 위한 클래스
 
-    private int num;
     private String id;
     private String pwd;
     private String name;
@@ -13,8 +12,7 @@ public class Member { // 사용자의 정보를 입력받기 위한 클래스
 
     }
 
-    public Member(int num, String id, String pwd, String name, int age, char gender) {
-        this.num = num;
+    public Member(String id, String pwd, String name, int age, char gender) {
         this.id = id;
         this.pwd = pwd;
         this.name = name;
@@ -22,13 +20,6 @@ public class Member { // 사용자의 정보를 입력받기 위한 클래스
         this.gender = gender;
     }
 
-    public int getNum() {
-        return num;
-    }
-
-    public void setNum(int num) {
-        this.num = num;
-    }
 
     public String getId() {
         return id;
@@ -72,13 +63,12 @@ public class Member { // 사용자의 정보를 입력받기 위한 클래스
 
     @Override
     public String toString() {
-        return "Member{" +
-                "num=" + num +
-                ", id='" + id + '\'' +
-                ", pwd='" + pwd + '\'' +
-                ", name='" + name + '\'' +
-                ", age=" + age +
-                ", gender=" + gender +
+        return "회원정보 {" +
+                "아이디='" + id + '\'' +
+                ", 비밀번호='" + pwd + '\'' +
+                ", 성함='" + name + '\'' +
+                ", 나이=" + age +
+                ", 성별=" + gender +
                 '}';
     }
 }
