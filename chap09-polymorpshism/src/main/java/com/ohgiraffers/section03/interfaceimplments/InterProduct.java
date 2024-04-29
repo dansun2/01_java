@@ -32,10 +32,12 @@ public interface InterProduct extends Serializable {
 
     void absMethod();
 
+    // static 메소드는 작성이 가능하다. (jdk 1.8 부터 추가)
     public static void staticMethod(){ //몸체를 갖는 경우
         System.out.println("interProduct 클래스의 staticMethod 호출됨...");
     }
 
+    // default 키워드를 사용하면 non-static 메소드도 작성이 가능하다. (jdk 1.8버전부터 추가)
     public default void defaultMethod(){ //몸체를 갖는 경우
         System.out.println("interProduct 클래스의 defaultMethod 호출됨...");
     }
