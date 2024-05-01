@@ -17,6 +17,21 @@ public class Application05 {
 //        Queue<String> que = new Queue();
 
         Queue<String> que = new LinkedList<>();
+        que.offer("first");
+        que.offer("second");
+        que.offer("third");
+        que.offer("fourth");
+        que.offer("fifth");
+
+        System.out.println(que);
+
+        // 가장 맨 앞에 있는 요소(먼저 들어온 요소)를 반환
+        System.out.println("peek() : " + que.peek());
+
+        System.out.println(que);
+        System.out.println("poll() : " + que.poll());
+        System.out.println(que);
+
 
     }
 }
