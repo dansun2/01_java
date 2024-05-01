@@ -31,7 +31,5 @@ public class Application05 {
         System.out.println(que);
         System.out.println("poll() : " + que.poll());
         System.out.println(que);
-
-
     }
 }
