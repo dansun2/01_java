@@ -22,8 +22,9 @@ public class OrderService {
             }
         }
 
+        String result = orderRepository.order(orders);
 
-        return "주문 성공";
+        return result;
     }
 
     public String orderRead(){
