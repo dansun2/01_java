@@ -12,12 +12,15 @@ public class Application {
         Scanner sc = new Scanner(System.in);
         Pcontorller pcontorller = new Pcontorller();
 
+        //데이터를 저장할 ArrayList생성 (PhoneDTO 클래스에서 가져오는데 변수명은 members
         ArrayList<PhoneDTO> members = new ArrayList<PhoneDTO>();
         int num = 0; // 몇명이 등록되었는지 체크하기 위한 숫자
 
+        String result = "";
+
 
         while (true){
-            System.out.println("=====전화번호부(그림)=====");
+            System.out.println("=====전화번호부=====");
             System.out.println("1. 전화번호 등록");
             System.out.println("2. 전화번호 수정");
             System.out.println("3. 전화번호 삭제");
@@ -27,10 +30,10 @@ public class Application {
 
             int input = sc.nextInt(); // 목차를 선택하기 위해 번호를 입력받음.
             sc.nextLine(); // 줄까지 포함
-            switch (input){
+            switch (input){ // 입력받은 번호에 따라서 case 번호 실행
                 case 1 :
                     int keepgoing = 1;
-                    while(keepgoing == 1){
+                    while(keepgoing == 1){ // 추가입력을 위해 while문을 사용하고 keepgoing의 기본값을 1로 설정
                         System.out.print("이름을 입력하세요. : ");
                         String name = sc.nextLine();
 
@@ -49,15 +52,17 @@ public class Application {
                         int group = Integer.parseInt(sc.nextLine());
 
                         members.add(new PhoneDTO(name, phone, email, memo, group));
-                        num++; //회원추가가 완료되면 리스트에 넣고 카운팅함
+                        num++; //회원추가가 완료되면 위에서 만들었던 members 리스트에 넣고 카운팅함
 
-                        System.out.println(members);
+                        System.out.println(members); // 입력받은 정보를 확인시켜주기 위해 출력해줌
                         System.out.println("전화번호부에 등록되었습니다.");
                         System.out.print("계속 등록하시려면 1번을 누르세요. ");
-                        keepgoing = sc.nextInt();
+                        keepgoing = sc.nextInt(); // 1번이면 위로 올라가서 while문 다시 실행함
 
                     } // 컨트롤러 넘겨
+                    result = (members) // 받은 고객DB를 주소록에 전달해줘 (그 안에서 꺼내쓰게)
                     break;
+
                 case 2 :
                     // 수정
                     // 수정하고 싶은 이름 입력
