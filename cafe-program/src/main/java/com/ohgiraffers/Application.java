@@ -18,8 +18,6 @@ public class Application {
 
         String result = "";
 
-
-
             while (order) {
 
                 System.out.println("1. 주문 등록");
@@ -31,7 +29,6 @@ public class Application {
 
                 int input = sc.nextInt();
                 sc.nextLine();
-
 
 
                 switch (input) {
