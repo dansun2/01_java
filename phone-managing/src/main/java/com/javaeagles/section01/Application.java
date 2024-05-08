@@ -62,7 +62,7 @@ public class Application {
                     } // 컨트롤러 넘겨
                     result = (members) // 받은 고객DB를 주소록에 전달해줘 (그 안에서 꺼내쓰게)
                     break;
-
+ 
                 case 2 :
                     // 수정
                     // 수정하고 싶은 이름 입력
