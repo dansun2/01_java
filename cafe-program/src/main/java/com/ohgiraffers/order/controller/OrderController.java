@@ -33,7 +33,7 @@ public class OrderController {
         return orderService.orderRead();
     }
 
-    public String orderDelete() {
+    public String orderDelete(int index) {
         return "삭제하기";
     }
 

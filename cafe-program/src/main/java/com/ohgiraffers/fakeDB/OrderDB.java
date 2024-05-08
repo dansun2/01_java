@@ -11,8 +11,8 @@ public class OrderDB {
 
     private OrderDB(){
         orders = new ArrayList();
-        OrderDTO orderDTO = new OrderDTO("아메리카노", 1000, 3);
-        orders.add(orderDTO);
+//        OrderDTO orderDTO = new OrderDTO("아메리카노", 1000, 3);
+//        orders.add(orderDTO);
 
     }
 

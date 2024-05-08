@@ -4,7 +4,7 @@ import com.ohgiraffers.order.dao.OrderRepository;
 import com.ohgiraffers.order.dto.OrderDTO;
 
 public class OrderRegister {
-    public void regist(OrderDTO[] aaa){
+    public void regist(OrderDTO[] orderDTO){
         System.out.println("메뉴를 추가합니다.");
 
         for (int i = 0; i < aaa.length; i++){

@@ -12,7 +12,7 @@ public class Application {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         OrderController orderController = new OrderController();
-
+        int index;
 
         boolean order = true;
 
@@ -59,15 +59,19 @@ public class Application {
 
 
                     case 2: // 주문 삭제
-                        System.out.print("삭제할  : ");
-                        boolean delete;
-                        if(delete){
-
-                        }else{
-                            System.out.println("이전 메뉴로 돌아갑니다.");
-                        }
-                        orderController.orderDelete();
+                        System.out.print("삭제할 주문 번호를 입력해주세요 : ");
+                        index = Integer.parseInt(sc.nextLine()); //주문을 삭제할 번호를 입력받음
+                        result = index + "번 "; // 입력한 번호를 결과값에 넣어주고
+                        result += orderController.orderDelete(index);
                         break;
+//                        boolean delete;
+//                        if(delete){
+//
+//                        }else{
+//                            System.out.println("이전 메뉴로 돌아갑니다.");
+//                        }
+//                        orderController.orderDelete();
+//                        break;
 
 
                     case 3: // 주문 수정

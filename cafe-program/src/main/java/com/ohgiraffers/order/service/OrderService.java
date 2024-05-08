@@ -4,7 +4,7 @@ import com.ohgiraffers.order.controller.OrderController;
 import com.ohgiraffers.order.dao.OrderRepository;
 import com.ohgiraffers.order.dto.OrderDTO;
 
-import static com.ohgiraffers.order.dao.OrderRepository.aaa;
+//import static com.ohgiraffers.order.dao.OrderRepository.aaa;
 
 public class OrderService {
 
