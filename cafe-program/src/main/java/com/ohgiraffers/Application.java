@@ -59,7 +59,7 @@ public class Application {
 
 
                     case 2: // 주문 삭제
-                        System.out.print("주문 내역을 삭제하시겠습니까? : ");
+                        System.out.print("삭제할  : ");
                         boolean delete;
                         if(delete){
 
